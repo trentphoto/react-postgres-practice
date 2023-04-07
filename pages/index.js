@@ -28,6 +28,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>This is just a test project.</p>
+        <p className={styles.description}>Currently the backend data is loaded when the frontend component mounts, using React's useEffect hook. A better way to load it would be to move the api request to a server-side function and pass it to the component as a prop.</p>
         <p className={styles.description}>Data from database:</p>
 
         <table className={styles.table}>
