@@ -39,9 +39,9 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-
+            {data ? console.log(data) : ''}
             {
-              data ? data.map(item => (
+              data.length > 0 ? data.map(item => (
                 <tr key={item.id} className={styles.tr}>
                   <td className={styles.td}>{item.name}</td>
                   <td className={styles.td}>{item.email}</td>
@@ -49,7 +49,6 @@ export default function Home() {
                 </tr>
               )) : 'Loading...'
             }
-
           </tbody>
         </table>
 
