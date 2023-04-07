@@ -19,13 +19,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  gap: 5px;
 }
 
 .title a {
@@ -126,4 +120,26 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+}
+
+.td {
+  padding: 20px;
+}
+
+.tr:nth-child(even){background-color: rgba(255,255,255, .07);}
+
+.th {
+  padding: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+  background-color: rgba(255,255,255, .1);
 }
